@@ -43,7 +43,7 @@ query <- function(snsrs, type = "ts") {
 popup_content <- function(query_str, sensorname, link = "ada") {
     if(host == "gblabs.co") {
         return (paste0(
-            "Click para ver mediciones de la última<br/>",
+            "<img src='https://45f22d39410a.ngrok.io/static/img/%s'><br>Click para ver mediciones de la última<br/>",
             sprintf("hora del sensor <b><a target='_blank' href='%s'>%s</a></b>",link, sensorname))
             )
     }
